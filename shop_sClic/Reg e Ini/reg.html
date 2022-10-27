@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop's Clic</title>
+    <link rel="stylesheet" href="../Reg e Ini/reg.css">
+    <link rel="shortcut icon" href="../IMG/LOGO.png" type="image/ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="circle2">
+            <span class="circle__btn">
+                <a href="../index.html">
+                    <ion-icon class="fa fa-sign-in" name="play"></ion-icon>
+                </a>
+            </span>
+            <span class="circle__back-1"></span>
+            <span class="circle__back-2"></span>
+        </div>
+        <div class="components">
+
+            <form id="registro">
+                <div class="form">
+
+                    <div class="search">
+                        <input type="text" class="search__input" id="name" placeholder="Usuario...">
+                        <div class="search__icon">
+                            <ion-icon class="fa fa-user"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="search">
+                        <input type="number" class="search__input" id="year" placeholder="Edad...">
+                        <div class="search__icon">
+                            <ion-icon class="fa fa-calendar"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="search">
+                        <input type="email" class="search__input" id="email" placeholder="ejemplo@...">
+                        <div class="search__icon">
+                            <ion-icon class="fa fa-envelope-o"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="search">
+                        <input type="password" class="search__input" id="password" placeholder="Contraseña...">
+                        <div class="search__icon">
+                            <ion-icon class="fa fa-key"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="search">
+                        <input type="password" class="search__input" id="password2"
+                            placeholder="Confirmar Contraseña...">
+                        <div class="search__icon">
+                            <ion-icon class="fa fa-key"></ion-icon>
+                        </div>
+                    </div>
+
+                    <a href="">
+                        <div class="chip">
+                            <div class="chip__icon">
+                                <ion-icon class="fa fa-google"></ion-icon>
+                            </div>
+                            <p>Continuar con Google</p>
+                            <div class="chip__close">
+                                <ion-icon name="close"></ion-icon>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="btn">
+                    <button type="submit" class="btn__primary">
+                        <p>Enviar</p>
+                    </button>
+
+                    <div class="btn__secondary">
+                        <a href="../Reg e Ini/iniciar.html">
+                            <p>Inicia Sesión</p>
+                        </a>
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="segmented-control">
+                <img src="../IMG/LOGO.png" alt="">
+                <input type="radio" name="radio2" value="5" id="tab-1" checked />
+                <label for="tab-1" class="segmented-control__1">
+                    <p class="p">Registrar</p>
+                </label>
+
+                <div class="segmented-control__color"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./reg.js"></script>
+</body>
+
+</html>

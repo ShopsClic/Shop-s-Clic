@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop's Clic</title>
+    <link rel="shortcut icon" href="../IMG/LOGO.png" type="image/ico">
+    <link rel="stylesheet" href="../Reg e Ini/iniciar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="circle2">
+            <span class="circle__btn">
+                <a href="../index.html">
+                    <ion-icon class="fa fa-sign-in" name="play"></ion-icon>
+                </a>
+            </span>
+            <span class="circle__back-1"></span>
+            <span class="circle__back-2"></span>
+        </div>
+        <div class="components">
+
+            <div class="segmented-control">
+                <img src="../IMG/LOGO.png" alt="">
+                <input type="radio" name="radio2" value="5" id="tab-1" checked />
+                <label for="tab-1" class="segmented-control__1">
+                    <p class="p">Iniciar</p>
+                </label>
+
+                <div class="segmented-control__color"></div>
+            </div>
+
+            <form id="iniciar">
+                <div class="form">
+                    <div class="search">
+                        <input type="text" class="search__input" placeholder="Usuario..." id="name">
+                        <div class="search__icon">
+                            <ion-icon class="fa fa-user"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="search">
+                        <input type="password" class="search__input" placeholder="Contraseña..." id="password">
+                        <div class="search__icon">
+                            <ion-icon class="fa fa-key"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="chip">
+                        <div class="chip__icon">
+                            <ion-icon class="fa fa-question-circle"></ion-icon>
+                        </div>
+                        <a href="../Reg e Ini/contraseña.html">
+                            <p class="olv">¿Olvidaste tu contraseña?</p>
+                        </a>
+                        <div class="chip__close">
+                            <ion-icon name="close"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <div class="btn__secondary">
+                            <a href="../Reg e Ini/reg.html">
+                                <p>Registrar</p>
+                            </a>
+                        </div>
+
+                        <a href="../lobby/lobby.html" target="_self">
+                            <button type="submit" class="btn__primary" id="open">
+                                <p>Enviar</p>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!--Ventana modal-->
+    <div id="modal_container" class="modal-container">
+        <div class="modal">
+            <h1>¿Cuál es tu perfil?</h1>
+            <p>
+                En nuestra pagina web, contamos con dos perfiles, el de CLIENTE y el de EMPRESARIO, cada uno de ellos
+                tienen diferencias.
+            </p>
+
+            <p>
+                Leer más...
+            </p>
+            <form id="modal">
+                <label for="perfil" class="perfil">
+                    <select name="¿Cuál es tu perfil?" id="perfil">
+                        <option value="select"> Selecciona tu perfil</option>
+                        <option id="cliente" value="cliente">Cliente</option>
+                        <option id="empresario" value="empresario">Empresario</option>
+                    </select>
+                </label>
+                <button type="submit" value="enviar" id="close">Siguiente</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./iniciar.js"></script>
+</body>
+
+</html>

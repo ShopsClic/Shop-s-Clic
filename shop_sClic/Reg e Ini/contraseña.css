@@ -1,0 +1,82 @@
+:root {
+    --primary-light: #dddddd;
+    --primary: #0bc173;
+    --primary-dark: #0e0000;
+    --white: #2c3e2b1f;
+    --greyLight-1: #ffffff;
+    --greyLight-2: #3d524780;
+    --greyLight-3: #727272;
+    --greyDark: #878787;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    margin-top: 100px;
+    background-color: #a0c7b4;
+}
+
+
+.container {
+    width: 27rem;
+    height: 35rem;
+    padding: 3rem;
+    display: grid;
+    align-items: center;
+    font-weight: 700;
+    background: var(--greyLight-1);
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 3rem;
+    color: black;
+    box-shadow: 8px 8px 20px 5px rgba(20, 20, 20, 0.4);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+a:link {
+    color: var(--primary-light);
+}
+
+.solicitar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 19px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgba(89, 206, 143, 0.81);
+    border: #59CE8F;
+    color: white;
+    font-weight: 700;
+    box-shadow: inset 0.2rem 0.2rem 1rem #44ab76, inset -0.2rem -0.2rem 1rem #dfdfdf, 0.3rem 0.3rem 0.6rem #b5b5b5, -0.2rem -0.2rem 0.5rem;
+}
+
+.email::placeholder {
+    color: gray;
+    text-align: center;
+    font-size: x-large;
+}
+
+.email {
+    margin: 0 auto;
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: text;
+    font-size: x-large;
+}
